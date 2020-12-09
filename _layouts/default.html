@@ -26,7 +26,7 @@
 
   {% include tracking-header.html %}
 </head>
-  <body class="{% if page.has-header == true %} home page-template page-template-page-templates page-template-page_widgetized page-template-page-templatespage_widgetized page woocommerce-no-js {% elsif page.date != null %} post-template-default single single-post postid-1 single-format-standard {% else %} home page-template-default page {% endif %}">
+  <body class="{% if page.has-header == true %}home page-template page-template-page-templates page-template-page_widgetized page-template-page-templatespage_widgetized page woocommerce-no-js{% elsif page.layout == "post" %}post-template-default single single-post postid-1 single-format-standard{% else %}home page-template-default page{% endif %}">
     <div class="preloader">
       <div class="preloader-inner">
         <ul>
@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      {% if page.date != null %}
+      {% if page.layout == "post" %}
         {% include widget-area.html %}
       {% endif %}
 
