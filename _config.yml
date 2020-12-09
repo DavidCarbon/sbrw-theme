@@ -30,6 +30,15 @@ gitlab_username:  1DavidCarbon
 youtube_channel_url: channel/UCBb14K408wOASTZ3hN0Ni-Q/videos
 development-mode: false
 
+# If you are using the Home Page Landing page or using its CSS template use the following in your html/markdown file
+# home-header: has-header
+#
+# If working with Widgets for a page, add the following to your html/markdown file
+# layout-extention: home-wrapper
+#
+# If you require a fullwidth page with no widgets side bar add the following to your html/markdown file
+# content-extention: fullwidth
+
 # Build settings
 plugins:
   - jekyll-feed

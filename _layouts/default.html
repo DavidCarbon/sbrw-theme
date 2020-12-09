@@ -26,7 +26,7 @@
 
   {% include tracking-header.html %}
 </head>
-  <body class="{% if page.has-header == true %} home page-template page-template-page-templates page-template-page_widgetized page-template-page-templatespage_widgetized page woocommerce-no-js {% elsif page.date %} post-template-default single single-post postid-1 single-format-standard {% else %} home page-template-default page {% endif %}">
+  <body class="{% if page.has-header == true %} home page-template page-template-page-templates page-template-page_widgetized page-template-page-templatespage_widgetized page woocommerce-no-js {% elsif page.date != null %} post-template-default single single-post postid-1 single-format-standard {% else %} home page-template-default page {% endif %}">
     <div class="preloader">
       <div class="preloader-inner">
         <ul>
@@ -49,7 +49,7 @@
               <p class="site-title"><a href="/" rel="home">{{site.site-name}}</a></p>
               <p class="site-description">{{site.site-description}}</p>
           </div>
-          <div class="btn-menu col-md-8 col-sm-6 col-xs-12"><i class="fa fa-navicon"></i></div>
+          <div class="btn-menu col-md-8 col-sm-6 col-xs-12"><i class="fas fa-bars"></i></div>
           {% include menu-header.html %}
         </div>
       </header><!-- #masthead -->
@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      {% if page.date %}
+      {% if page.date != null %}
         {% include widget-area.html %}
       {% endif %}
 
