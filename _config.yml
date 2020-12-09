@@ -30,7 +30,6 @@ gitlab_username:  1DavidCarbon
 youtube_channel_url: channel/UCBb14K408wOASTZ3hN0Ni-Q/videos
 
 # Build settings
-theme: astrid
 plugins:
   - jekyll-feed
 
