@@ -317,12 +317,13 @@ select {
 .btn-submenu {
 	position: relative;
 	top: 3px;
-	font-family: "FontAwesome";
+	font-family: "Font Awesome\ 5 Free";
 	font-size: 20px;
 	text-align: center;
 	cursor: pointer;
 	padding: 10px;
 	margin-left: 10px;
+	font-weight: 900;
 }
 .btn-submenu:before {
 	content: "\f107";
