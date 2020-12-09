@@ -28,6 +28,7 @@ twitter_username: DavidCarbon_JR
 github_username:  DavidCarbon
 gitlab_username:  1DavidCarbon
 youtube_channel_url: channel/UCBb14K408wOASTZ3hN0Ni-Q/videos
+development-mode: false
 
 # Build settings
 plugins:

@@ -1,0 +1,71 @@
+<aside id="secondary" class="widget-area" role="complementary">
+    {% if site.development-mode != false %}
+    <aside id="search" class="widget widget_search">
+        <form role="search" method="get" class="search-form" action="{{site.baseurl}}/search/">
+            <label>
+                <span class="screen-reader-text">Search for:</span>
+                <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+            </label>
+            <input type="submit" class="search-submit" value="Search" />
+        </form>
+    </aside>
+    <aside id="recent-comments" class="widget widget_recent_comments">
+        <h4 class="widget-title">Recent Comments</h4>
+        <ul id="recentcomments">
+            <li class="recentcomments">
+                <span class="comment-author-link">
+                    <a href='https://wordpress.org/' rel='external nofollow ugc' class='url'>A WordPress Commenter</a>
+                </span> on <a href="{{site.baseurl}}/hello-world/#comment-1">Hello world!</a>
+            </li>
+        </ul>
+    </aside>
+    <aside id="meta" class="widget widget_meta">
+        <h4 class="widget-title">Meta</h4>
+        <ul>
+            <li><a rel="nofollow" href="{{site.baseurl}}/wp-login.php">Log in</a></li>
+            <li><a href="{{site.baseurl}}/feed/">Entries feed</a></li>
+            <li><a href="{{site.baseurl}}/comments/feed/">Comments feed</a></li>
+            <li><a href="https://wordpress.org/">WordPress.org</a></li>
+        </ul>
+    </aside>
+    <aside id="archives" class="widget widget_archive">
+        <h4 class="widget-title">Archives</h4>
+        <ul>
+            <li><a href='{{site.baseurl}}/2020/09/'>September 2020</a></li>
+        </ul>
+    </aside><aside id="categories" class="widget widget_categories">
+        <h4 class="widget-title">Categories</h4>
+        <ul>
+            <li class="cat-item cat-item-1">
+                {% for category in lastest_post.categories %}
+                <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                {% endfor %}
+                <a href="{{site.baseurl}}/category/uncategorized/">Uncategorized</a>
+            </li>
+        </ul>
+    </aside>
+    {% endif %}
+    <aside id="recent-posts" class="widget widget_recent_entries">
+        <h4 class="widget-title">Recent Posts</h4>
+        <ul>
+            <li>
+                {% assign latest_post = site.posts[0] %}
+                <a href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
+                {% assign second_post = site.posts[1] %}
+                <a href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
+                {% assign third_post = site.posts[2] %}
+                <a href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
+                {% assign fourth_post  = site.posts[3] %}
+                <a href="{{site.baseurl}}{{fourth_post .url}}">{{ fourth_post .title }}</a>
+                {% assign fifth_post = site.posts[4] %}
+                <a href="{{site.baseurl}}{{fifth_post.url}}">{{ fifth_post.title }}</a>
+                {% assign sixth_post = site.posts[5] %}
+                <a href="{{site.baseurl}}{{sixth_post.url}}">{{ sixth_post.title }}</a>
+                {% assign seventh_post = site.posts[6] %}
+                <a href="{{site.baseurl}}{{seventh_post.url}}">{{ seventh_post.title }}</a>
+                {% assign eighth_post = site.posts[7] %}
+                <a href="{{site.baseurl}}{{eighth_post.url}}">{{ eighth_post.title }}</a>
+            </li>
+        </ul>
+    </aside>
+</aside><!-- #secondary -->
