@@ -1734,8 +1734,8 @@ body.page-template-page_widgetized {
 	top: 0;
 	left: 0;
 	z-index: 9999;
-	-webkit-transition: all 1s;
-	transition: all 1s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .preloader-hidden {
 	opacity: 0;
