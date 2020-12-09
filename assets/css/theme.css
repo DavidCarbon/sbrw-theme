@@ -643,6 +643,7 @@ select {
 .widget_categories li::before {
 	font-family: "Font Awesome\ 5 Free";
 	font-size: 15px;
+	font-weight: 900;
 }
 .widget_recent_entries li::before {
 	content: '\f781';
