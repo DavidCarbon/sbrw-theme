@@ -1,0 +1,26 @@
+{% if site.youtube_channel_url %}
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item">
+    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/{{ site.youtube_channel_url }}">YouTube</a>
+</li>
+{% endif %}
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item">
+    <a target="_blank" rel="noopener noreferrer" href="">YouTube</a>
+</li>
+
+{% if site.reddit_username %}
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item">
+    <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/{{ site.reddit_username }}">Reddit</a>
+</li>
+{% endif %}
+
+{% if site.facebook_username %}
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item">
+    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/{{ site.facebook_username }}">Facebook</a>
+</li>
+{% endif %}
+
+{% if site.github_username %}
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item">
+    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+</li>
+{% endif %}
