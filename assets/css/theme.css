@@ -645,7 +645,7 @@ select {
 	font-size: 15px;
 }
 .widget_recent_entries li::before {
-	content: '\f040';
+	content: '\f781';
 	margin-right: 5px;
 }
 .widget_archive li::before {
@@ -657,11 +657,11 @@ select {
 	margin-right: 8px;	
 }
 .widget_recent_comments li::before {
-	content: '\f0e5';
+	content: '\f075';
 	margin-right: 8px;
 }
 .widget_categories li::before {
-	content: '\f114';
+	content: '\f07b';
 	margin-right: 8px;
 }
 .tagcloud a {
