@@ -17,9 +17,7 @@
   <!-- Theme Stylesheet -->
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css" />
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/fontawesome.min.css" />  
-  <!-- Simple Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
   <!-- DLC (Additional Tweaks) CSS -->
   {% include dlc-css.html %}
   <!-- JQuery -->
@@ -28,7 +26,7 @@
 
   {% include tracking-header.html %}
 </head>
-  <body class="{% if page.has-header == true %} home page-template page-template-page-templates page-template-page_widgetized page-template-page-templatespage_widgetized page woocommerce-no-js {% elsif page.layout == "post" %} post-template-default single single-post postid-1 single-format-standard {% else %} home page-template-default page {% endif %}">
+  <body class="{% if page.has-header == true %} home page-template page-template-page-templates page-template-page_widgetized page-template-page-templatespage_widgetized page woocommerce-no-js {% elsif page.date %} post-template-default single single-post postid-1 single-format-standard {% else %} home page-template-default page {% endif %}">
     <div class="preloader">
       <div class="preloader-inner">
         <ul>
@@ -84,6 +82,10 @@
         </div>
       </div>
 
+      {% if page.date %}
+        {% include widget-area.html %}
+      {% endif %}
+
       <div class="footer-wrapper">
         <div class="footer-info">
           <div class="container">
@@ -95,10 +97,6 @@
             </div>
           </div>
         </div>
-
-        {% if page.layout == "post" %}
-          {% include widget-area.html %}
-        {% endif %}
 
         <footer id="colophon" class="site-footer" role="contentinfo">	
           <div class="site-info container">
