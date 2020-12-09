@@ -2385,3 +2385,25 @@ body.page-template-page_widgetized {
 		margin-right: -30px;
 	}	
 }
+
+/*--------------------------------------------------------------
+## Markdown to HTML (Add-ons)
+--------------------------------------------------------------*/
+
+code {
+	color: #ff0266;
+}
+
+pre {
+	background: #eee;
+	padding: 5px;
+	font-size: 14px;
+	display: block;
+	color: #212529;
+}
+
+pre code {
+	font-size: inherit;
+	color: inherit;
+	word-break: normal;
+}
