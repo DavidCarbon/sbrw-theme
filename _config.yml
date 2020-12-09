@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: DavidCarbon
-small_description: Powered by jekyll
+site-title: DavidCarbon
+site-description: Powered by jekyll
 email: your-email@domain.com
 description: Unoffical Site - From Need For Speed World Offline to a rewrite of GameLauncher taken from Need For Speed World. Soapbox Race World
 baseurl: "" # the subpath of your site, e.g. /blog
