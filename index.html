@@ -1,23 +1,38 @@
 ---
-layout: default
+layout: home-no-posts
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section data-color="noinherit" style="padding-top:100px;padding-bottom:100px;background-image:url();" id="atframework_services-3" class="widget atframework_services_widget">
+  <div class="atblock container">
+    <h2 class="widget-title"><span class="title-decoration"></span>What We Provide</h2>
+      <div class="service-area clearfix">
+        <div class="service sbrw-3col">
+          <div class="service-thumb">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title"><a>Multiple Servers</a></h3>
+            <p style="color:black">Our server list consists of various community-hosted servers, along with official servers operated by project staff.</p>
+          </div>
+        </div>
+        <div class="service sbrw-3col">
+          <div class="service-thumb">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title"><a>Custom Economy</a></h3>
+            <p style="color:black">Every server has total freedom over its economy, so there are plenty of unique experiences to try out!</p>
+          </div>
+        </div>
+        <div class="service sbrw-3col">
+          <div class="service-thumb">
+            <i class="fas fa-check"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title"><a>Easy to Use</a></h3>
+            <p style="color:black">Download and run the launcher, and it will set up your game installation! Then you can make an account and play.  It's that simple.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
