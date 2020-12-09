@@ -43,7 +43,7 @@
     <div id="page" class="site">
       <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
       
-      <header id="masthead" class="site-header {% if page.has-header == "true" or if page.url == "/" %}has-header{% endif %}" role="banner">
+      <header id="masthead" class="site-header {% if page.has-header != false %} has-header {% endif %}" role="banner">
         <div class="container">
           <div class="site-branding col-md-4 col-sm-6 col-xs-12">
               <p class="site-title"><a href="/" rel="home">{{site.site-name}}</a></p>
