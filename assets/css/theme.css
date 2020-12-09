@@ -722,6 +722,8 @@ select {
 	font-size: 13px;
 }
 .entry-footer .fa,
+.entry-footer .far,
+.entry-meta .far,
 .entry-meta .fa {
 	margin-right: 5px;
 }
