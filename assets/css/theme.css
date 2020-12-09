@@ -560,7 +560,7 @@ select {
 }
 .social-widget li a::before,
 .social-menu-widget a:before {
-	font-family: FontAwesome;
+	font-family: "Font Awesome\ 5 Free";
 	color: inherit;
 }
 .social-menu-widget a:before {
@@ -641,7 +641,7 @@ select {
 .widget_pages li::before,
 .widget_recent_comments li::before,
 .widget_categories li::before {
-	font-family: Fontawesome;
+	font-family: "Font Awesome\ 5 Free";
 	font-size: 15px;
 }
 .widget_recent_entries li::before {
@@ -1955,7 +1955,7 @@ body.page-template-page_widgetized {
 .woocommerce div.product form.cart .button::before,
 .woocommerce ul.products li.product .button::before {
 	content: '\f07a';
-	font-family: FontAwesome;
+	font-family: "Font Awesome\ 5 Free";
 	margin-right: 5px;
 }
 .woocommerce ul.products li.product h3 {
