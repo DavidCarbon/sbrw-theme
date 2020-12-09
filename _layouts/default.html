@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% include tracking-header.html %}
+
   <title>{{ page.title}} - {{site.site-name}}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
@@ -23,8 +25,6 @@
   <!-- JQuery -->
   <script type="text/javascript" src="{{site.baseurl}}/assets/js/core/jquery.js"></script>
   <script type="text/javascript" src="{{site.baseurl}}/assets/js/core/jquery-migrate.min.js"></script>
-
-  {% include tracking-header.html %}
 </head>
   <body class="{% if page.has-header == true %}home page-template page-template-page-templates page-template-page_widgetized page-template-page-templatespage_widgetized page woocommerce-no-js{% elsif page.layout == "post" %}post-template-default single single-post single-format-standard{% else %}home page-template-default page{% endif %}">
     <div class="preloader">
