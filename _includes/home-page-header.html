@@ -1,0 +1,18 @@
+<div id="wp-custom-header" class="wp-custom-header">
+    <div class="header-image">          
+      <div class="header-info">
+        <div class="container">
+          <h4 class="header-subtext">Return to the streets of</h4>
+          <h3 class="header-text">Need For Speed: World</h3>
+          <a class="button header-button" href="{{page.header-button-url}}" {% if page.header-button-target != null %}target="_blank"><b>Download Launcher</b></a>
+        </div>
+      </div>
+    {% if page.has-video-header != null %}
+      <video id="wp-custom-header-video" poster="{{page.featured-image-header}}" autoplay loop muted src="{{page.has-video-header}}" width="1920" height="1080"></video>
+    {% endif %}
+    {% if page.has-video-header == null %}
+      <img class="large-header" src="{{page.featured-image-header}}" width="1920" alt="Featured Image">
+      <div class="small-header" style="width:100%;height:268.467px;"></div>
+    {% endif %}
+    </div>
+</div><!-- #header-image -->
