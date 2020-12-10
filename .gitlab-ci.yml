@@ -16,7 +16,7 @@ before_script:
 test:
   stage: test
   script:
-  - bundle exec jekyll build --trace -d test
+  - bundle exec jekyll build -d test
   artifacts:
     paths:
     - test
@@ -26,7 +26,7 @@ test:
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll build -d public
+  - bundle exec jekyll build --trace -d public
   artifacts:
     paths:
     - public
