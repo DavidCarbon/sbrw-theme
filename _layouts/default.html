@@ -45,7 +45,7 @@
     <div id="page" class="site">
       <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
       
-      <header id="masthead" class="site-header {% if page.has-header != null %}has-header{% endif %}" role="banner">
+      <header id="masthead" class="site-header {% if page.has-header != null %}has-header{% elsif page.has-video-header != null %}has-video{% endif %}" role="banner">
         <div class="container">
           <div class="site-branding col-md-4 col-sm-6 col-xs-12">
               <p class="site-title"><a href="/" rel="home">{{site.site-name}}</a></p>
@@ -59,21 +59,27 @@
         <div class="header-clone"></div>
       {% endif %}
 
-      {% if page.url == "/" %}
-      <!-- #header-text -->
-	    <div class="header-image">
-		    <div class="header-info">
-			    <div class="container">
-				    <h4 class="header-subtext">Return to the streets of</h4>
-				    <h3 class="header-text">Need For Speed: World</h3>
-				    <a class="button header-button" href="https://git.io/Download_NFSW" target="_blank"><b>Download Launcher</b></a>
-			    </div>
-		    </div>
-			  <!-- #header-image -->
-			  <img class="large-header" src="https://sbrw.io/assets/img/web-ss-2.jpg" width="1920" alt="In-Game Image">
-			  <div class="small-header" style="width:100%;height:268.467px;"></div>
-	    </div>
-      {% endif %}
+    {% if page.url == "/" %}
+      {% if page.has-video-header != null %}
+        <div id="wp-custom-header" class="wp-custom-header">
+          <video id="wp-custom-header-video" poster="{{page.featured-image-header}}" autoplay loop muted src="{{page.has-video-header}}" width="1920" height="1080"></video>
+        </div>
+      {% else %}
+        <!-- #header-text -->
+        <div class="header-image">
+          <div class="header-info">
+            <div class="container">
+              <h4 class="header-subtext">Return to the streets of</h4>
+              <h3 class="header-text">Need For Speed: World</h3>
+              <a class="button header-button" href="https://git.io/Download_NFSW" target="_blank"><b>Download Launcher</b></a>
+            </div>
+          </div>
+          <!-- #header-image -->
+          <img class="large-header" src="{{page.featured-image-header}}" width="1920" alt="In-Game Image">
+          <div class="small-header" style="width:100%;height:268.467px;"></div>
+        </div>
+      {% endif %}  
+    {% endif %}
       
       <div id="content" class="site-content">
         <div class="{% if page.layout-extention %}{{page.layout-extention}}{% else %}container{% endif %}">
