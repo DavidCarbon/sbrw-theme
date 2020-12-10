@@ -64,7 +64,7 @@
             </div>
           {% if page.has-video-header != null %}
             <video id="wp-custom-header-video" poster="{{page.featured-image-header}}" autoplay loop muted src="{{page.has-video-header}}" width="1920" height="1080"></video>
-          {% else %}
+          {% elsif page.has-video-header == null %}
             <img class="large-header" src="{{page.featured-image-header}}" width="1920" alt="Featured Image">
             <div class="small-header" style="width:100%;height:268.467px;"></div>
           {% endif %}
